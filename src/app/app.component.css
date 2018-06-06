@@ -1,0 +1,13 @@
+h1 {
+  color: green;
+}
+
+.jumbotron{
+  margin-top: 10px;
+  padding: 2rem 2rem;
+  background-color: #cfc2e2;
+}
+
+li{
+  margin-bottom: 4px;
+}
