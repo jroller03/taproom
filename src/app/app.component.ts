@@ -12,13 +12,14 @@ export class AppComponent {
   month: number = this.currentTime.getMonth() + 1;
   day: number = this.currentTime.getDate();
   year: number = this.currentTime.getFullYear();
+  selectedKeg = null;
 
   kegs: Keg[] = [
     new Keg('Red Ipa','Sharkbite', '$3.45', 6.7 ,3, 100),
     new Keg('Harp','Irish Half and Half', '$5.00', 3.4 ,2, 110),
     new Keg('Yeungling','Yeungling Brewery', '$4.45', 4.6 ,1, 105)
   ];
-  selectedKeg = null;
+
 
   editKeg(clickedKeg) {
   this.selectedKeg = clickedKeg;
@@ -31,8 +32,11 @@ export class AppComponent {
   } else {
     return "bg-info";
   }
-}
-finishedEditing() {
+  }
+  finishedEditing() {
     this.selectedKeg = null;
+  }
+  addKeg(newKeg: Keg) {
+    this.kegs.push(newKeg);
   }
 }
