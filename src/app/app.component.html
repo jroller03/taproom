@@ -1,12 +1,12 @@
 <div class="container">
   <div class="jumbotron">
-    <h1>Welcome to the Tap Room</h1>
+    <h1>Welcome to the Justin's Irish Tap Room</h1>
   </div>
 <h1>Menu for {{month}}/{{day}}/{{year}}</h1>
 
 <h3>{{currentFocus}}</h3>
 <ul>
- <li [class]="levelColor(currentKeg)" *ngFor="let currentKeg of kegs"><h4>{{currentKeg.name}}</h4><br><strong>Brand:</strong> {{currentKeg.brand}}<br> <strong>Alcohol Content:</strong> {{currentKeg.alcoholContent}}<br> <strong>Price:</strong> {{currentKeg.price}}<br><button class="btn" (click)="editKeg(currentKeg)">Edit</button></li>
+ <li [class]="levelColor(currentKeg)" *ngFor="let currentKeg of kegs"><h4>{{currentKeg.name}}</h4><br><strong>Brand:</strong> {{currentKeg.brand}}<br> <strong>Alcohol Content:</strong> {{currentKeg.alcoholContent}}<br> <strong>Price:</strong> {{currentKeg.price}}<br><strong>Pints Left:</strong> {{currentKeg.pints}}<br><button class="btn" (click)="editKeg(currentKeg)">Edit</button></li>
 </ul>
 
 <div *ngIf="selectedKeg">

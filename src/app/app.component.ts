@@ -14,9 +14,9 @@ export class AppComponent {
   year: number = this.currentTime.getFullYear();
 
   kegs: Keg[] = [
-    new Keg('Red Ipa','Sharkbite', '$3.45', 6.7 ,3),
-    new Keg('Harp','Irish Half and Half', '$5.00', 3.4 ,2),
-    new Keg('Yeungling','Yeungling Brewery', '$4.45', 4.6 ,1)
+    new Keg('Red Ipa','Sharkbite', '$3.45', 6.7 ,3, 100),
+    new Keg('Harp','Irish Half and Half', '$5.00', 3.4 ,2, 110),
+    new Keg('Yeungling','Yeungling Brewery', '$4.45', 4.6 ,1, 105)
   ];
   selectedKeg = null;
 
