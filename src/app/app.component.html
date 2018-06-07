@@ -11,9 +11,9 @@
    <strong>Brand:</strong> {{currentKeg.brand}}<br>
    <strong>Alcohol Content:</strong> {{currentKeg.alcoholContent}}<br>
    <strong>Price:</strong> {{currentKeg.price}}<br>
-   <strong>Pints Left:</strong> {{currentKeg.pints}}<br>
+   <strong>Pints Left:</strong> {{currentKeg.pintCount}}<br>
    <button class="btn" (click)="editKeg(currentKeg)">Edit</button><br>
-   <button class="btn" (click)="selectedKeg(currentKeg).orderPint()">Order</button>
+   <button class="btn" (click)="currentKeg.orderPint()">Order</button>
  </li>
 </ul>
 
